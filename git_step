@@ -1,9 +1,32 @@
 
+시작
 git init
 
+사용자 정보 입력
 git config --global user.name "(macaronjung)"
 git config --global user.email "(macaronjung@gmail.com)"
 
+상태보기
 git status
 
+모든 파일 깃 타임캡슐에 상태 저장
 git add -A
+
+캡슐 설명 입력
+git commit -m "캡슐설명문"
+
+캡슐 안으로 add -> stage 한다
+
+상태 확인 하기
+git log
+
+log 창에서 vi 에디터 탈출
+; + q
+
+캡슐을 파내서 돌아갈 시점 이전을 완전 삭제 후 돌아가기
+git reset 일련번호앞6자리 --hard
+
+캡슐을 파내서 취소할 시점을 찾아 돌아가기
+git revert 일련번호6자리
+-> 새 커밋 메시지 작성 화면 출력
+-> 그대로 저장하겠다는 vi 명령어 -> :wq
